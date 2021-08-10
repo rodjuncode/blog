@@ -1,0 +1,88 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://use.typekit.net/pcm3vmo.css">
+  <link rel="stylesheet" href="css/splide.min.css">
+  <script src="js/splide.js"></script>
+
+  <style>
+
+    .splide__slide { background: #F0386B; }
+    .splide__slide {
+      font-family: loos-normal,sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    h1 {
+      font-family: loos-extrawide,sans-serif;
+      font-weight: 700;
+      font-style: normal;
+    }
+    body { margin: 4px 0; }
+
+
+  </style>
+
+</head>
+
+<body>
+  <h1>be a blogueirinho!</h1>
+
+  <div id="category1" class="splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide"><img src="images/folha.png"></li>
+        <li class="splide__slide">work 02</li>
+        <li class="splide__slide">work 03</li>
+        <li class="splide__slide">work 04</li>
+        <li class="splide__slide">work 05</li>
+        <li class="splide__slide">work 06</li>
+        <li class="splide__slide">work 07</li>
+        <li class="splide__slide">work 08</li>
+        <li class="splide__slide">work 09</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="category2" class="splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">work 01</li>
+        <li class="splide__slide">work 02</li>
+        <li class="splide__slide">work 03</li>
+        <li class="splide__slide">work 04</li>
+        <li class="splide__slide">work 05</li>
+        <li class="splide__slide">work 06</li>
+        <li class="splide__slide">work 07</li>
+        <li class="splide__slide">work 08</li>
+        <li class="splide__slide">work 09</li>
+      </ul>
+    </div>
+  </div>  
+
+  <script>
+    document.addEventListener( 'DOMContentLoaded', function () {
+      new Splide('#category1', {
+        perPage : 2,
+        cover   : true,
+        height: '20rem',
+        padding: {
+          right: '5rem',
+        },        
+      }).mount();
+
+      new Splide('#category2', {
+        perPage : 2,
+        cover   : true,
+        height: '20rem',
+        padding: {
+          right: '5rem',
+        },        
+      }).mount();
+
+    } );
+  </script>
+
+</body>
+
+</html>
