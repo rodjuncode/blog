@@ -1,6 +1,7 @@
 <html>
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://use.typekit.net/pcm3vmo.css">
   <link rel="stylesheet" href="css/splide.min.css">
   <script src="js/splide.js"></script>
@@ -31,54 +32,56 @@
   <div id="category1" class="splide">
     <div class="splide__track">
       <ul class="splide__list">
-        <li class="splide__slide"><img src="images/folha.png"></li>
-        <li class="splide__slide">work 02</li>
-        <li class="splide__slide">work 03</li>
-        <li class="splide__slide">work 04</li>
-        <li class="splide__slide">work 05</li>
-        <li class="splide__slide">work 06</li>
-        <li class="splide__slide">work 07</li>
-        <li class="splide__slide">work 08</li>
-        <li class="splide__slide">work 09</li>
+        <li class="splide__slide"><img src="images/folha.png">work 01</li>
+        <li class="splide__slide"><img src="images/arquitetura-moderna.png">work 02</li>
+        <li class="splide__slide"><img src="images/blocos-memorias.png">work 03</li>
+        <li class="splide__slide"><img src="images/brinquedos-de-lata.png">work 04</li>
+        <li class="splide__slide"><img src="images/colecao-folha-fotografia.png">work 05</li>
+        <li class="splide__slide"><img src="images/empapel.png">work 06</li>
+        <li class="splide__slide"><img src="images/infraero.png">work 07</li>
+        <li class="splide__slide"><img src="images/simbolismo.png">work 08</li>
+        <li class="splide__slide"><img src="images/televisoes-do-futuro.png">work 09</li>
+        <li class="splide__slide"><img src="images/antonio-haddad.png">work 09</li>
       </ul>
     </div>
   </div>
 
-  <div id="category2" class="splide">
-    <div class="splide__track">
-      <ul class="splide__list">
-        <li class="splide__slide">work 01</li>
-        <li class="splide__slide">work 02</li>
-        <li class="splide__slide">work 03</li>
-        <li class="splide__slide">work 04</li>
-        <li class="splide__slide">work 05</li>
-        <li class="splide__slide">work 06</li>
-        <li class="splide__slide">work 07</li>
-        <li class="splide__slide">work 08</li>
-        <li class="splide__slide">work 09</li>
-      </ul>
-    </div>
-  </div>  
+
+
+
 
   <script>
     document.addEventListener( 'DOMContentLoaded', function () {
       new Splide('#category1', {
-        perPage : 2,
+        perPage : 3,
+        perMove: 1,
         cover   : true,
         height: '20rem',
         padding: {
           right: '5rem',
         },        
+        type   : 'loop',
+        breakpoints: {
+          '640': {
+            perPage: 2,
+            gap    : '1rem',
+          },
+          '480': {
+            perPage: 1,
+            gap    : '1rem',
+          },
+        }        
       }).mount();
 
-      new Splide('#category2', {
-        perPage : 2,
-        cover   : true,
-        height: '20rem',
-        padding: {
-          right: '5rem',
-        },        
-      }).mount();
+
+      // new Splide('#category2', {
+      //   perPage : 2,
+      //   cover   : true,
+      //   height: '20rem',
+      //   padding: {
+      //     right: '5rem',
+      //   },        
+      // }).mount();
 
     } );
   </script>
