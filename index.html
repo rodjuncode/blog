@@ -8,7 +8,7 @@
 
   <style>
 
-    .splide__slide { background: #F0386B; }
+    .splide__slide { background: #FFF; }
     .splide__slide {
       font-family: loos-normal,sans-serif;
       font-weight: 400;
@@ -18,8 +18,94 @@
       font-family: loos-extrawide,sans-serif;
       font-weight: 700;
       font-style: normal;
+      margin: 20px;
+      width: 50%;
+      float: left;
     }
-    body { margin: 4px 0; }
+
+    h3 {
+      font-family: loos-extrawide,sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      margin: 25px 20px 20px 20px;
+      width: 40%;
+      float: right;
+      text-align: right;
+    }
+
+    body { margin: 0px; }
+    
+    .splide { margin: 0; }
+
+    .category-wrapper {
+      height: 320px;
+      clear: both;
+      margin: 0 0 3rem 0;
+    }
+
+    .category-wrapper img {
+      height: 320px;
+    }    
+
+    .category-wrapper h2 { 
+      /* float: left; */
+      /* width: 400px;  */
+      font-family: loos-wide, sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 7rem;
+      text-align: right;
+      padding: 9.2rem 2rem 0 0;
+      margin: 0;
+      line-height: 85%;
+    }
+
+    .cat-title-wrapper {
+      float:left;
+    }
+
+    .splide-wrapper {
+      float: left;
+    }
+
+    #editorial .cat-title-wrapper {
+      width: 35%;
+    }
+
+    #editorial h2 { font-size: 7rem;}
+
+    #editorial .splide-wrapper {
+      width: 65%;
+    }
+
+    #tipografia .cat-title-wrapper {
+      width: 43%;
+    }
+
+    #tipografia .splide-wrapper {
+      width: 57%;
+    }
+
+    #tipografia.category-wrapper h2 {
+      text-align: left;
+      padding: 9.2rem 0 0 2rem;
+    }
+
+    #design .cat-title-wrapper {
+      width: 35%;
+    }
+
+    #design .splide-wrapper {
+      width: 65%;
+    }
+
+    .splide img {
+      transition: transform .2s; /* Animation */
+    }
+
+    .splide img:hover {
+      transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
 
 
   </style>
@@ -27,62 +113,149 @@
 </head>
 
 <body>
-  <h1>be a blogueirinho!</h1>
+  <div id="top-bar">
+    <h1>Marcio Freitas</h1>
+    <h3>Sobre&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contato</h3>
+  </div>
 
-  <div id="category1" class="splide">
-    <div class="splide__track">
-      <ul class="splide__list">
-        <li class="splide__slide"><img src="images/folha.png">work 01</li>
-        <li class="splide__slide"><img src="images/arquitetura-moderna.png">work 02</li>
-        <li class="splide__slide"><img src="images/blocos-memorias.png">work 03</li>
-        <li class="splide__slide"><img src="images/brinquedos-de-lata.png">work 04</li>
-        <li class="splide__slide"><img src="images/colecao-folha-fotografia.png">work 05</li>
-        <li class="splide__slide"><img src="images/empapel.png">work 06</li>
-        <li class="splide__slide"><img src="images/infraero.png">work 07</li>
-        <li class="splide__slide"><img src="images/simbolismo.png">work 08</li>
-        <li class="splide__slide"><img src="images/televisoes-do-futuro.png">work 09</li>
-        <li class="splide__slide"><img src="images/antonio-haddad.png">work 09</li>
-      </ul>
+  <div id="editorial" class="category-wrapper">
+    <div class="cat-title-wrapper">
+      <h2>com</br>editorial</h2>
+    </div>
+    <div class="splide-wrapper">
+      <div id="category1" class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide"><a href=""><img src="images/perfidia.png"></a></li>
+            <li class="splide__slide"><a href=""><img src="images/infraero-2.png"></a></li>
+            <li class="splide__slide"><a href=""><img src="images/top-of-mind.png"></a></li>
+            <li class="splide__slide"><a href=""><img src="images/folha.png"></a></li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 
 
+  <div id="tipografia" class="category-wrapper">
+    <div class="splide-wrapper">
+      <div id="category2" class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide"><a href=""><img src="images/sesc-60.png"></a></li>            
+            <li class="splide__slide"><a href=""><img src="images/antonio-haddad.png"></a></li>
+            <li class="splide__slide"><a href=""><img src="images/sesc-tv.png"></a></li>
+            <li class="splide__slide"><a href=""><img src="images/caderno-sesc.png"></a></li>            
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="cat-title-wrapper">
+      <h2>com</br>tipografia</h2>
+    </div>
+  </div>
 
 
+  <div id="design" class="category-wrapper">
+    <div class="cat-title-wrapper">
+      <h2>com</br>infografia</h2>
+    </div>
+    <div class="splide-wrapper">
+      <div id="category3" class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide"><a href=""><img src="images/plural.png"></a></li>
+            <li class="splide__slide"><a href=""><img src="images/folha-100-anos.png"></a></li>
+            <li class="splide__slide"><a href=""><img src="images/brinquedo-lata.png"></a></li>
+            <li class="splide__slide"><a href=""><img src="images/relatorio-papel.png"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>  
 
   <script>
     document.addEventListener( 'DOMContentLoaded', function () {
       new Splide('#category1', {
         perPage : 3,
         perMove: 1,
-        cover   : true,
-        height: '20rem',
+        // cover   : true,
+        autoWidth: true,
+        gap: '1rem',
+        focus  : 'center',
+        height: '20rem',  
         padding: {
           right: '5rem',
-        },        
+        },  
         type   : 'loop',
+        lazyLoad: 'nearby',
         breakpoints: {
           '640': {
             perPage: 2,
-            gap    : '1rem',
+            autoWidth: false,
+            cover: true,
           },
           '480': {
             perPage: 1,
-            gap    : '1rem',
+            autoWidth: false,            
+            cover: true,
           },
         }        
       }).mount();
 
+      new Splide('#category2', {
+        perPage : 3,
+        perMove: 1,
+        // cover   : true,
+        autoWidth: true,
+        gap: '1rem',
+        focus  : 'center',
+        height: '20rem',
+        padding: {
+          right: '5rem',
+        },  
+        type   : 'loop',
+        lazyLoad: 'nearby',
+        breakpoints: {
+          '640': {
+            perPage: 2,
+            autoWidth: false,
+            cover: true,
+          },
+          '480': {
+            perPage: 1,
+            autoWidth: false,            
+            cover: true,
+          },
+        }        
+      }).mount();
 
-      // new Splide('#category2', {
-      //   perPage : 2,
-      //   cover   : true,
-      //   height: '20rem',
-      //   padding: {
-      //     right: '5rem',
-      //   },        
-      // }).mount();
-
+      new Splide('#category3', {
+        perPage : 3,
+        perMove: 1,
+        // cover   : true,
+        autoWidth: true,
+        gap: '1rem',
+        focus  : 'center',
+        height: '20rem',
+        padding: {
+          right: '5rem',
+        },  
+        type   : 'loop',
+        lazyLoad: 'nearby',
+        breakpoints: {
+          '640': {
+            perPage: 2,
+            autoWidth: false,
+            cover: true,
+          },
+          '480': {
+            perPage: 1,
+            autoWidth: false,            
+            cover: true,
+          },
+        }        
+      }).mount();      
     } );
   </script>
 
